@@ -5,6 +5,11 @@ package dominio;
  * @author Jesús Andrés Hincapié Londoño
  */
 public class Equipo {
+	
+	//-----------------------------------------------------
+	// Constantes
+	//-----------------------------------------------------
+	
 	/**
 	 * Constante que contiene el nombre del primer jugador
 	 */
@@ -60,40 +65,23 @@ public class Equipo {
 	 */
 	public static final int NUMERO_JUGADORES = 5;
 	
+	//-----------------------------------------------------
+	// Atributos
+	//-----------------------------------------------------
+	
 	/**
 	 * Representa el primer jugador
 	 */
 	private Jugador jugador1;
 	
-	/**
-	 * Representa el segundo jugador
-	 */
-	private Jugador jugador2;
-	
-	/**
-	 * Representa el tercer jugador
-	 */
-	private Jugador jugador3;
-	
-	/**
-	 * Representa el cuarto jugador
-	 */
-	private Jugador jugador4;
-	
-	/**
-	 * Representa el quinto jugador
-	 */
-	private Jugador jugador5;
+	// TODO: Declarar los atributos para modelar los demás jugadores
 	
 	/**
 	 * Construye un objeto de la clase Equipo, creando los jugadores que lo conforman
 	 */
 	public Equipo() {
 		jugador1 = new Jugador(N_1, NOMBRE_1);
-		jugador2 = new Jugador(N_2, NOMBRE_2);
-		jugador3 = new Jugador(N_3, NOMBRE_3);
-		jugador4 = new Jugador(N_4, NOMBRE_4);
-		jugador5 = new Jugador(N_5, NOMBRE_5);
+		// TODO: Crear los objetos correspondientes a los demás jugadores
 	}
 	
 	/**
@@ -137,16 +125,16 @@ public class Equipo {
 			jugador1.agregarRegistro(goles, asistencias, amarillas, rojas);
 			break;
 		case N_2:
-			jugador2.agregarRegistro(goles, asistencias, amarillas, rojas);
+			// TODO: Escribir la llamada al método agregarRegistro del jugador 2
 			break;
 		case N_3:
-			jugador3.agregarRegistro(goles, asistencias, amarillas, rojas);
+			// TODO: Escribir la llamada al método agregarRegistro del jugador 2
 			break;
 		case N_4:
-			jugador4.agregarRegistro(goles, asistencias, amarillas, rojas);
+			// TODO: Escribir la llamada al método agregarRegistro del jugador 2
 			break;
 		case N_5:
-			jugador5.agregarRegistro(goles, asistencias, amarillas, rojas);
+			// TODO: Escribir la llamada al método agregarRegistro del jugador 2
 			break;
 		default:
 			throw new EquipoException("El jugador no pertenece al equipo.");
@@ -188,7 +176,7 @@ public class Equipo {
 	 * @return Número real que indica el promedio de tarjetas rojas del equipo
 	 */
 	public double calcularPromedioRojas() {
-		return (double)getTotalRojas() / (double)NUMERO_JUGADORES;
+		// TODO: Completar el método según la documentación
 	}
 	
 	/**
@@ -196,10 +184,7 @@ public class Equipo {
 	 * @return Número real que indica el número de goles por asistencia
 	 */
 	public double calcularRelacionGolesAsistencias() {
-		double totalAsistencias = getTotalAsistencias();
-		if(totalAsistencias == 0)
-			return -1;
-		return (double)getTotalGoles() / totalAsistencias;
+		// TODO: Completar el método según la documentación
 	}
 	
 	/**
@@ -207,11 +192,7 @@ public class Equipo {
 	 * @return Número entero con el total de tarjetas amarillas
 	 */
 	private int getTotalAmarillas() {
-		return jugador1.getTotalTajetasAmarillas() +
-				jugador2.getTotalTajetasAmarillas() +
-				jugador3.getTotalTajetasAmarillas() +
-				jugador4.getTotalTajetasAmarillas() +
-				jugador5.getTotalTajetasAmarillas();
+		// TODO: Completar el método según la documentación
 	}
 	
 	/**
@@ -219,11 +200,7 @@ public class Equipo {
 	 * @return Número entero con el total de tarjetas rojas
 	 */
 	private int getTotalRojas() {
-		return jugador1.getTotalTarjetasRojas() +
-				jugador2.getTotalTarjetasRojas() +
-				jugador3.getTotalTarjetasRojas() +
-				jugador4.getTotalTarjetasRojas() +
-				jugador5.getTotalTarjetasRojas();
+		// TODO: Completar el método según la documentación
 	}
 	
 	/**
@@ -231,11 +208,7 @@ public class Equipo {
 	 * @return Número entero con el total de goles del equipo
 	 */
 	private int getTotalGoles() {
-		return jugador1.getTotalGoles() +
-				jugador2.getTotalGoles() +
-				jugador3.getTotalGoles() +
-				jugador4.getTotalGoles() +
-				jugador5.getTotalGoles();
+		// TODO: Completar el método según la documentación
 	}
 	
 	/**
@@ -243,11 +216,7 @@ public class Equipo {
 	 * @return Número entero con el totol de asistencias.
 	 */
 	private int getTotalAsistencias() {
-		return jugador1.getTotalAsistencias() +
-				jugador2.getTotalAsistencias() +
-				jugador3.getTotalAsistencias() +
-				jugador4.getTotalAsistencias() +
-				jugador5.getTotalAsistencias();
+		// TODO: Completar el método según la documentación
 	}
 	
 }

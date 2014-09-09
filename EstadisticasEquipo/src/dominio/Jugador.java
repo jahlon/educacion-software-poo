@@ -6,6 +6,10 @@ package dominio;
  */
 public class Jugador {
 	
+	//-----------------------------------------------------
+	// Atributos
+	//-----------------------------------------------------
+	
 	/**
 	 * El número del jugador
 	 */
@@ -36,70 +40,65 @@ public class Jugador {
 	 */
 	private int totalTarjetasRojas;
 	
+	//-----------------------------------------------------
+	// Constructores
+	//-----------------------------------------------------
+	
 	/**
+	 * Constructor de un nuevo jugador. <br>
 	 * Crear un nuevo jugador con el número y el nombre especificado
-	 * @param numero entero que indica el número del jugador
+	 * @param numero entero que indica el número del jugador. numero > 0
 	 * @param nombre String que indica el nombre del jugador
 	 */
 	public Jugador(int numero, String nombre) {
-		this.numero = numero;
-		this.nombre = nombre;
+		// TODO: Completar el método de creación del objeto
 	}
+	
+	//-----------------------------------------------------
+	// Métodos
+	//-----------------------------------------------------
 	
 	/**
 	 * Agrega un registro estadístico del jugador
 	 * 
-	 * @param goles
-	 * @param asistencias
-	 * @param tarjetasAmarillas
-	 * @param tarjetasRojas
+	 * @param goles los goles por ej jugador anotados en el partido. goles >= 0
+	 * @param asistencias las asistencias hechas por el jugador en el partido. asistencias >= 0
+	 * @param tarjetasAmarillas las tarjetas amarillas recibidas por el jugador en el partido. tarjetasAmarillas >= 0 y tarjetasRojas <= 2
+	 * @param tarjetasRojas las tarjetas rojas recibidas por el jugador en el partido. tajetasRojas >= 0 y tarjetasRojas <= 1
 	 */
 	public void agregarRegistro(int goles, int asistencias, int tarjetasAmarillas, int tarjetasRojas) {
-		totalGoles += goles;
-		totalAsistencias += asistencias;
-		totalTajetasAmarillas += tarjetasAmarillas;
-		totalTarjetasRojas += tarjetasRojas;
+		// TODO: Completar el método según la documentación
 	}
 	
 	/**
 	 * Retorna el número del jugador
 	 * @return numero del jugador
 	 */
-	public int getNumero() {
-		return numero;
-	}
+	// TODO: Construir el método según la documentación
 	
 	/**
 	 * Retorna el nombre del jugador
 	 * @return nombre del jugador
 	 */
-	public String getNombre() {
-		return nombre;
-	}
+	// TODO: Construir el método según la documentación
 	
 	/**
 	 * Retorna el número total de goles marcado por el jugador
 	 * @return total de goles marcados
 	 */
-	public int getTotalGoles() {
-		return totalGoles;
-	}
+	// TODO: Construir el método según la documentación
 	
 	/**
 	 * Retorna el número total de asistencias hechas por el jugador
 	 * @return total de asistencias hechas
 	 */
-	public int getTotalAsistencias() {
-		return totalAsistencias;
-	}
+	// TODO: Construir el método según la documentación
 	
 	/**
 	 * Retorna el número total de tarjetas amarillas recibidas por el jugador
 	 * @return total de tarjetas amarillas
 	 */
-	public int getTotalTajetasAmarillas() {
-		return totalTajetasAmarillas;
-	}
+	// TODO: Construir el método según la documentación
 	
 	/**
 	 * Retorna el número total de tarjetas rojas recibidas por el jugador
