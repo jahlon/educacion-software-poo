@@ -144,23 +144,10 @@ public class Equipo {
 	/**
 	 * Retorna un jugador dado su número
 	 * @param numero entero que indica el número del jugador
-	 * @return Un onjeto de la clase Jugador
+	 * @return Un objeto de la clase Jugador que corresponde al jugador con el número dado, o null si no existe un jugador con el número indicado
 	 */
 	public Jugador getJugador(int numero) {
-		switch(numero) {
-		case N_1:
-			return jugador1;
-		case N_2:
-			return jugador2;
-		case N_3:
-			return jugador3;
-		case N_4:
-			return jugador4;
-		case N_5:
-			return jugador5;
-		default:
-			return null;
-		}
+		// TODO: Completar el método de según la documentación
 	}
 	
 	/**

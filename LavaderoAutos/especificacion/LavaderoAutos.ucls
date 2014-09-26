@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.5" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="edu.udem.poo.lavadero.mundo.Lavadero" project="LavaderoAutos" 
+    file="/LavaderoAutos/src/edu/udem/poo/lavadero/mundo/Lavadero.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="213" y="256"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="edu.udem.poo.lavadero.mundo.Empleado" project="LavaderoAutos" 
+    file="/LavaderoAutos/src/edu/udem/poo/lavadero/mundo/Empleado.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="635" y="253"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="3">    
+    <bendpoint x="373" y="322"/>    
+    <bendpoint x="436" y="322"/>    
+    <bendpoint x="497" y="322"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="4" name="empleado4"/>      
+      <multiplicity id="5" minimum="0" maximum="1">        
+        <position height="16" width="23" x="505" y="321"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="6">    
+    <bendpoint x="430" y="257"/>    
+    <bendpoint x="485" y="258"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="7" name="empleado1"/>      
+      <multiplicity id="8" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="9">    
+    <bendpoint x="365" y="162"/>    
+    <bendpoint x="448" y="162"/>    
+    <bendpoint x="509" y="162"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="10" name="empleado5"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="12">    
+    <bendpoint x="368" y="115"/>    
+    <bendpoint x="435" y="115"/>    
+    <bendpoint x="501" y="115"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="13" name="empleado3">        
+        <position height="18" width="60" x="467" y="93"/>      
+      </attribute>      
+      <multiplicity id="14" minimum="0" maximum="1">        
+        <position height="16" width="23" x="495" y="129"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="15">    
+    <bendpoint x="367" y="393"/>    
+    <bendpoint x="432" y="393"/>    
+    <bendpoint x="492" y="393"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="16" name="empleado2">        
+        <position height="18" width="60" x="452" y="359"/>      
+      </attribute>      
+      <multiplicity id="17" minimum="0" maximum="1">        
+        <position height="16" width="23" x="503" y="389"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
